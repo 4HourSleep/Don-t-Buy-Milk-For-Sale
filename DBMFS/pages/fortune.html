@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Milk Fortune</title>
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body>
+
+<div class="window">
+    <div class="window-title">Daily Milk Fortune</div>
+
+    <h2>Shake the Milk</h2>
+    <p id="fortune-text">Tap to receive today's reading.</p>
+
+    <button class="btn" onclick="getFortune()">Shake</button>
+
+    <!-- Puzzle section -->
+    <div id="puzzle" style="display:none; margin-top:20px;">
+        <p><strong>Puzzle Unlocked:</strong></p>
+        <p id="puzzle-question"></p>
+        <input type="text" id="puzzle-input" placeholder="Answer here">
+        <button class="btn-small" onclick="checkPuzzle()">Submit</button>
+        <p id="puzzle-result"></p>
+    </div>
+
+    <p style="font-size:12px; margin-top:20px;">Do Not Buy Milk.</p>
+</div>
+
+<script src="../js/main.js"></script>
+
+</body>
+</html>

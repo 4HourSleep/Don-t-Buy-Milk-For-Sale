@@ -1,0 +1,41 @@
+{
+    "fortunes": [
+      "Stay calm.",
+      "Move gently today.",
+      "Do not shake.",
+      "Temperature is stable.",
+      "Continue breathing.",
+      "You are fine.",
+      "System stable.",
+      "Remain steady.",
+      "Relax slightly.",
+      "Slow down a bit.",
+      "Noise is lower.",
+      "You feel softer.",
+      "Let yourself settle.",
+      "Fold a little.",
+      "Do not turn back.",
+      "Blue is harmless.",
+      "You are lighter.",
+      "Watch internal waves.",
+      "Ignore the shadow.",
+      "Edges shifting.",
+      "The machine listens.",
+      "Pressure is low.",
+      "Pressure is high.",
+      "You are leaking.",
+      "Stay translucent.",
+      "Memory thins out.",
+      "Do not drink that.",
+      "Color shift normal.",
+      "Your body glows.",
+      "This is your taste."
+    ],
+  
+    "puzzle": {
+      "triggerClicks": 6,
+      "question": "Where reversed?",
+      "answer": "motherboard"
+    }
+  }
+  

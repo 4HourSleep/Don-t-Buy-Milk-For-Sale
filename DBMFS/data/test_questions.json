@@ -1,0 +1,47 @@
+{
+    "questions": [
+      {
+        "q": "Which process do you value most?",
+        "options": ["Clear thinking", "Smooth breathing", "Body reaction", "Structural stability", "Communication"]
+      },
+      {
+        "q": "What do you do under pressure?",
+        "options": ["Organize steps", "Breathe slowly", "Check your body", "Hold yourself steady", "Talk to someone"]
+      },
+      {
+        "q": "Your rhythm feels like…",
+        "options": ["Even", "Rising and falling", "Fast then slow", "Solid and calm", "Changing with others"]
+      },
+      {
+        "q": "Your preferred space?",
+        "options": ["Quiet", "Airy", "Full of smells", "Organized", "Social"]
+      },
+      {
+        "q": "What do you trust most?",
+        "options": ["Data", "Air", "Food", "Structure", "People"]
+      },
+      {
+        "q": "Your ideal state?",
+        "options": ["Clear", "Smooth", "Full", "Stable", "Warm"]
+      },
+      {
+        "q": "How do you solve problems?",
+        "options": ["Analyze", "Adjust breath", "Try it", "Rebuild structure", "Discuss"]
+      },
+      {
+        "q": "You often…",
+        "options": ["Overthink", "Hold breath", "Eat fast", "Fixate", "Get influenced"]
+      },
+      {
+        "q": "What makes you feel safe?",
+        "options": ["Rules", "Airflow", "Food", "Walls", "Voices"]
+      },
+      {
+        "q": "Your state today?",
+        "options": ["Calm", "Steady", "Busy", "Still", "Warm"]
+      }
+    ],
+  
+    "organs": ["Brain", "Lungs", "Stomach", "Uterus", "Heart"]
+  }
+  

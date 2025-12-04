@@ -1,0 +1,128 @@
+{
+  "project_name": "DO NOT BUY MILK FOR SALE",
+  "style_guide": {
+    "font_family": "Pixelated/Monospace (VT323, Press Start 2P)",
+    "color_palette": {
+      "background": "#0F141F",
+      "text_primary": "#F4F4F4",
+      "text_secondary": "#B0B0B0",
+      "warning": "#FF0033",
+      "accent_green": "#00FF7F"
+    },
+    "scaling_strategy": {
+      "variable_name": "--px-unit",
+      "breakpoints_px": {
+        "mobile": "< 640",
+        "tablet": "641 - 1024",
+        "desktop": "> 1024"
+      },
+      "unit_sizes": {
+        "mobile": "2px",
+        "tablet": "3px",
+        "desktop": "4px"
+      },
+      "rule": "All padding, margin, border, and shadows are calculated using 'calc(N * var(--px-unit))'."
+    }
+  },
+  "page_layouts": [
+    {
+      "page_id": "P01_LOGIN_PORTAL",
+      "title": "EMPLOYEE ACCESS PORTAL",
+      "purpose": "NFC entry point and initial authorization",
+      "layout_desktop": {
+        "structure": "Single-column centered container",
+        "elements": [
+          "Title Banner (MILK PROCESSING UNIT)",
+          "Warning Indicator (Flashing Red LED)",
+          "Authorization Text Block (Replaces input forms)",
+          "Background Audio Visualization (Daisy Bell)"
+        ]
+      },
+      "layout_mobile": {
+        "structure": "Full-screen vertical center alignment",
+        "notes": "Large, thumb-friendly authorization button/text."
+      }
+    },
+    {
+      "page_id": "P02_MAIN_HUB",
+      "title": "PRIMARY CONTROL DASHBOARD",
+      "purpose": "Main navigation and status overview",
+      "layout_desktop": {
+        "structure": "CSS Grid: 3 columns (1fr / 3fr / 1.5fr)",
+        "column_left": "Permanent Navigation Menu (6 options + Status Board link)",
+        "column_center": "Main Content/Info Blocks (Productivity Charts/System Overviews)",
+        "column_right": "Dynamic SYSTEM LOG / NARRATOR Feed (Live text update area)"
+      },
+      "layout_mobile": {
+        "structure": "CSS Flex: Single-column stack",
+        "elements": [
+          "Top Bar (Logo + Hamburger Menu Icon)",
+          "Main Content Area (Scrollable cards for charts/info)",
+          "Fixed Bottom: NARRATOR Dialogue Box (Low height)"
+        ],
+        "notes": "Hamburger Menu opens full-screen overlay for all navigation links."
+      }
+    },
+    {
+      "page_id": "P03_ID_CARD_GENERATOR",
+      "title": "OPERATOR ID REGISTRATION",
+      "purpose": "Generate shareable pixel ID card for immersion",
+      "layout_desktop": {
+        "structure": "CSS Grid: 3 columns (1.5fr / 2fr / 1fr)",
+        "column_left": "Image Upload / Job Title Input Form",
+        "column_center": "Live ID Card Preview (Large Canvas Output)",
+        "column_right": "NARRATOR Tips & System Status"
+      },
+      "layout_mobile": {
+        "structure": "Single-column scrollable",
+        "elements": [
+          "Top: Live Preview (Full Width Scaled Canvas)",
+          "Middle: Form Inputs (Full Width, Large Tap Targets)",
+          "Bottom Fixed: Export/Save Button (44px height min)"
+        ]
+      }
+    },
+    {
+      "page_id": "P04_MILK_SUITABILITY_TEST",
+      "title": "CONSCIOUSNESS ADAPTATION TEST",
+      "purpose": "Horror/Uncanny Valley questionnaire for organ mapping",
+      "layout_desktop": {
+        "structure": "Symmetrical layout / Two-column",
+        "column_left": "Question Text (Center Aligned)",
+        "column_right": "Visual/Image Options (Symmetrically placed distorted pixel art)",
+        "notes": "Right Column can display historical answers or a 'System Evaluation' score."
+      },
+      "layout_mobile": {
+        "structure": "Full-screen single question view",
+        "elements": [
+          "Top: Question Text",
+          "Center: Image Option 1 (Large)",
+          "Spacer",
+          "Center: Image Option 2 (Large)",
+          "Bottom: Navigation Buttons (Prev/Next/Submit, 44px min)"
+        ],
+        "notes": "Use horizontal swipe gesture to change questions."
+      }
+    },
+    {
+      "page_id": "P05_MODULE_COLLECTION",
+      "title": "ARCHIVE 2801: FEN QING MODULARITY",
+      "purpose": "Display status of the 5 collected inner organ modules",
+      "layout_desktop": {
+        "structure": "CSS Grid: 3 columns (1fr / 3fr / 1fr)",
+        "column_left": "Module Tree View (List of Brain, Heart, Stomach, Uterus/Lung)",
+        "column_center": "Selected Module Detail (Pixel data, Memory Fragments, Audio Player)",
+        "column_right": "STATUS BOARD (Player STATS: Sanity, Stamina, etc.)"
+      },
+      "layout_mobile": {
+        "structure": "Single-column stack (prioritized viewing)",
+        "elements": [
+          "Top: Module Selector (Horizontal Scrollable Tabs/Cards)",
+          "Middle: Selected Module Detail (Full Screen Scrollable)",
+          "Bottom Fixed: Status Quick View (Sanity/Stamina Bar)"
+        ],
+        "notes": "The NFC scanning area should be prominent when a module is 'MISSING'."
+      }
+    }
+  ]
+}

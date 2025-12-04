@@ -1,0 +1,40 @@
+{
+    "departments": {
+      "Brain": {
+        "id": "DATA OPS",
+        "color": "#7BA5C9",
+        "container": "steel_can.png",
+        "description": "Clear processing and information stability.",
+        "milkType": "TYPE-B"
+      },
+      "Lungs": {
+        "id": "QUALITY CONTROL",
+        "color": "#7BC9A3",
+        "container": "milk_box.png",
+        "description": "Rhythm awareness and adaptive flow.",
+        "milkType": "TYPE-L"
+      },
+      "Stomach": {
+        "id": "FERMENTATION LINE",
+        "color": "#C9B47B",
+        "container": "stone_pot.png",
+        "description": "Intuitive reaction and physical response.",
+        "milkType": "TYPE-S"
+      },
+      "Uterus": {
+        "id": "CORE DEVELOPMENT",
+        "color": "#C97BBE",
+        "container": "milk_bag.png",
+        "description": "Structural consistency and pressure endurance.",
+        "milkType": "TYPE-U"
+      },
+      "Heart": {
+        "id": "HR & SAFETY",
+        "color": "#C97B7B",
+        "container": "glass_unit.png",
+        "description": "Interpersonal rhythm and emotional balance.",
+        "milkType": "TYPE-H"
+      }
+    }
+  }
+  

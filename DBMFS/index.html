@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Responsive layout for mobile/tablet/desktop -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DI Factory - Do Not Buy Milk</title>
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+    <!-- ===========================
+         MAIN WRAPPER (Centered)
+         =========================== -->
+    <div class="index-container">
+
+        <!-- DI FACTORY LOGO (pixel-art placeholder) -->
+        <img src="img/ui/di_factory_logo.png" alt="DI Factory Logo" class="logo">
+
+        <!-- WELCOME MESSAGE -->
+        <div class="welcome-box">
+            <h1>Welcome, Investigator.</h1>
+            <p>You have been selected to join DI Factory.</p>
+            <p>Please proceed to access your internal panel.</p>
+        </div>
+
+        <!-- MAIN BUTTONS -->
+        <div class="button-area">
+            <button class="btn enter-btn" onclick="goToHub()">ENTER</button>
+            <button class="btn apply-btn" onclick="goToHub()">APPLY</button>
+        </div>
+
+        <!-- HIDDEN BUTTON: DO NOT BUY MILK -->
+        <button class="hidden-dnbm" onclick="goToHub()">DO NOT BUY MILK</button>
+
+    </div>
+
+
+    <!-- ===========================
+         JAVASCRIPT
+         =========================== -->
+    <script>
+        // Navigate to hub menu
+        function goToHub() {
+            window.location.href = "pages/hub.html";
+        }
+    </script>
+
+</body>
+</html>

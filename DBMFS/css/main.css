@@ -1,0 +1,93 @@
+/* ================================================
+   GLOBAL RESET + PIXEL AESTHETICS
+   ================================================ */
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #dcdcdc; /* Win98 gray */
+    font-family: "Pixel", sans-serif;
+    image-rendering: pixelated;
+    overflow-x: hidden;
+}
+
+/* Center wrapper */
+.center {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+/* ================================================
+   WINDOW (WIN98 STYLE)
+   ================================================ */
+.window {
+    background: #ffffff;
+    border: 3px solid #000000;
+    padding: 12px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 600px;
+}
+
+.window-title {
+    background: #000080;
+    color: white;
+    padding: 6px;
+    font-size: 14px;
+    text-align: left;
+}
+
+
+/* ================================================
+   BUTTONS
+   ================================================ */
+.btn {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    background: #e6e6e6;
+    border: 2px solid #000;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background: #ffffff;
+}
+
+.btn-small {
+    width: auto;
+    padding: 6px 10px;
+    font-size: 13px;
+}
+
+
+/* ================================================
+   RESPONSIVE ADAPTATION
+   ================================================ */
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .window {
+        max-width: 500px;
+        transform: scale(0.9);
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .window {
+        width: 95%;
+        transform: scale(0.85);
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 10px;
+    }
+}

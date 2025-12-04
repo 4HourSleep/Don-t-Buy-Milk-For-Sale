@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Departments - DI Factory</title>
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body>
+
+<div class="window">
+    <div class="window-title">DI Factory - Departments</div>
+    <h2>Organ Modules</h2>
+    <p>Select a department to access the assigned module.</p>
+
+    <button class="btn" onclick="goDep('brain')">Brain (Data Ops)</button>
+    <button class="btn" onclick="goDep('lungs')">Lungs (Quality Control)</button>
+    <button class="btn" onclick="goDep('stomach')">Stomach (Fermentation)</button>
+    <button class="btn" onclick="goDep('uterus')">Uterus (Core Development)</button>
+    <button class="btn" onclick="goDep('heart')">Heart (HR & Safety)</button>
+
+    <p style="font-size:12px; margin-top:20px;">Do Not Buy Milk.</p>
+</div>
+
+<script>
+function goDep(dep){
+    window.location.href = dep + ".html";
+}
+</script>
+
+</body>
+</html>
