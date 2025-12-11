@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DI Factory — Meet Our Team</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/hub-webcore.css">
+    <link rel="stylesheet" href="css/decorative-layer.css">
+    <link rel="stylesheet" href="css/ad-popup.css">
+</head>
+
+<body data-page="team">
+    <!-- Decorative Collage Layer (Cameron's World style) -->
+    <div id="decorative-layer" class="decorative-layer"></div>
+
+    <!-- Webcore floating decorative elements -->
+    <img src="img/ui/head.gif" alt="" class="webcore-decor webcore-decor-1">
+    <img src="img/organs/brain.png" alt="" class="webcore-decor webcore-decor-2">
+    <img src="img/organs/heart.png" alt="" class="webcore-decor webcore-decor-3">
+
+    <div class="hub-window">
+        <!-- TITLE BAR -->
+        <div class="hub-title">DI Factory — Meet Our Team</div>
+
+        <!-- MAIN CONTENT -->
+        <div class="home-content">
+            <div class="home-header">
+                <h1>Meet Our Team</h1>
+            </div>
+
+            <div class="home-section">
+                <p>DI Factory employs specialized personnel from diverse</p>
+                <p>technical and bio-mechanical backgrounds.</p>
+                <p>Each division contributes a unique component to Blue Milk production.</p>
+            </div>
+
+            <div class="home-divider"></div>
+
+            <!-- K.Y -->
+            <div class="team-member">
+                <h3>K.Y — Founder / Core Material Provider</h3>
+                <div class="team-member-wrapper">
+                    <img src="img/team/KY.jpeg" alt="K.Y" class="team-photo">
+                    <div class="team-content">
+                        <p>K.Y initiated DI Factory after discovering the first stable</p>
+                        <p>Compression–Extraction Cycle™.</p>
+                        <p></p>
+                        <p>The biological structure of K.Y remains the foundation of all Blue Milk.</p>
+                        <p>Core Material continues to output emotional data and nutritional</p>
+                        <p>stability despite ongoing absence.</p>
+                        <p></p>
+                        <p><strong>Status:</strong> Missing</p>
+                        <p><strong>Location:</strong> Unknown</p>
+                        <p><strong>Milk Contribution Rate:</strong> 87% (decreasing)</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="home-divider"></div>
+
+            <!-- M.H -->
+            <div class="team-member">
+                <h3>M.H — Core Division Lead (Uterus Division / Motherboard Unit)</h3>
+                <div class="team-member-wrapper">
+                    <img src="img/team/MH.jpeg" alt="M.H" class="team-photo">
+                    <div class="team-content">
+                        <p>M.H oversees the Reproductive Firmware Program,</p>
+                        <p>synchronizing organic cycles with motherboard circuitry.</p>
+                        <p></p>
+                        <p><strong>Responsibilities include:</strong></p>
+                        <ul>
+                            <li>Wombline™ expansion</li>
+                            <li>Monthly firmware rewrites</li>
+                            <li>Thermal regulation at a constant 37.2°C</li>
+                        </ul>
+                        <p></p>
+                        <p>Visitors often describe the Core Division environment as</p>
+                        <p>"warm" and "alive." These reactions are expected.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="home-divider"></div>
+
+            <!-- W.S -->
+            <div class="team-member">
+                <h3>W.S — IT & Surveillance (Brain / Memory Division)</h3>
+                <div class="team-member-wrapper">
+                    <img src="img/team/WS.jpeg" alt="W.S" class="team-photo">
+                    <div class="team-content">
+                        <p>W.S maintains the Brain-Lattice Server Grid,</p>
+                        <p>Headspace Monitoring Systems,</p>
+                        <p>and Memory Reconstruction Chambers.</p>
+                        <p></p>
+                        <p>Minimal noise and stable patterns are recommended</p>
+                        <p>when operating near the monitoring units.</p>
+                        <p></p>
+                        <p><strong>Log entries frequently display:</strong></p>
+                        <p>"SEED 120 VERIFIED"</p>
+                        <p>"OVERRIDE MANUAL ENABLED"</p>
+                        <p>"UNAUTHORIZED PRESENCE DETECTED"</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="home-divider"></div>
+
+            <!-- F.Z -->
+            <div class="team-member">
+                <h3>F.Z — Human Resources / Behavioral Integration (Heart Division)</h3>
+                <div class="team-member-wrapper">
+                    <img src="img/team/FZ.jpeg" alt="F.Z" class="team-photo">
+                    <div class="team-content">
+                        <p>F.Z conducts recruitment, compliance calibration,</p>
+                        <p>pulse-tuning procedures, and investigator assessment.</p>
+                        <p></p>
+                        <p>Unstable BPM values may trigger additional emotional compression.</p>
+                        <p></p>
+                        <p><strong>Division Protocol:</strong></p>
+                        <p>"The heart circulates everything."</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="home-section">
+                <p><a href="home.html" class="home-link">← Back to Home</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script>
+        // Random background selection
+        (function() {
+            var bgImages = [
+                'img/ui/bg1.gif',
+                'img/ui/bg2.gif',
+                'img/ui/bg3.gif',
+                'img/ui/bg4.gif',
+                'img/ui/bg5.gif'
+            ];
+            var randomIndex = Math.floor(Math.random() * bgImages.length);
+            var selectedBg = bgImages[randomIndex];
+            document.body.style.backgroundImage = 'url(' + selectedBg + ')';
+        })();
+
+        // Generate decorative collage layer (same as home.html)
+        (function() {
+            var decorativeLayer = document.getElementById('decorative-layer');
+            if (!decorativeLayer) return;
+
+            var gifSources = [
+                'img/ui/head.gif',
+                'img/organs/brain.png',
+                'img/organs/heart.png',
+                'img/organs/lung.png',
+                'img/organs/stomach.png',
+                'img/organs/uterus.png'
+            ];
+
+            for (var i = 0; i < 8; i++) {
+                var img = document.createElement('img');
+                var selectedSrc = gifSources[Math.floor(Math.random() * gifSources.length)];
+                img.src = selectedSrc;
+                img.className = 'decorative-element float';
+                img.style.width = ((16 + Math.random() * 32) * 1.5) + 'px';
+                img.style.height = 'auto';
+                img.style.left = Math.random() * 100 + '%';
+                img.style.top = Math.random() * 100 + '%';
+                img.style.animationDelay = Math.random() * 2 + 's';
+                if (selectedSrc.indexOf('head.gif') !== -1) {
+                    img.style.opacity = 0.5 + Math.random() * 0.3;
+                } else {
+                    img.style.opacity = 0.15 + Math.random() * 0.2;
+                }
+                decorativeLayer.appendChild(img);
+            }
+
+            var retroTexts = [
+                'UNDER CONSTRUCTION',
+                'NEW!',
+                'CLICK HERE',
+                '>>>',
+                'WELCOME',
+                'ENTER',
+                'LOADING...',
+                'COMING SOON',
+                'VISITORS: ' + Math.floor(Math.random() * 9999),
+                'LAST UPDATED: 1999'
+            ];
+
+            for (var j = 0; j < 6; j++) {
+                var text = document.createElement('div');
+                text.className = 'decorative-text blink-text';
+                if (Math.random() > 0.5) text.className += ' neon';
+                text.textContent = retroTexts[Math.floor(Math.random() * retroTexts.length)];
+                text.style.left = Math.random() * 90 + '%';
+                text.style.top = Math.random() * 90 + '%';
+                text.style.transform = 'rotate(' + (Math.random() * 20 - 10) + 'deg)';
+                text.style.animationDelay = Math.random() * 2 + 's';
+                decorativeLayer.appendChild(text);
+            }
+
+            var badges = ['WARNING', 'CAUTION', 'NOTICE', 'ALERT', 'INFO'];
+            for (var k = 0; k < 4; k++) {
+                var badge = document.createElement('div');
+                badge.className = 'decorative-badge';
+                badge.textContent = badges[Math.floor(Math.random() * badges.length)];
+                badge.style.left = Math.random() * 85 + '%';
+                badge.style.top = Math.random() * 85 + '%';
+                badge.style.transform = 'rotate(' + (Math.random() * 30 - 15) + 'deg)';
+                decorativeLayer.appendChild(badge);
+            }
+
+            for (var l = 0; l < 2; l++) {
+                var banner = document.createElement('div');
+                banner.className = 'decorative-banner';
+                banner.textContent = 'UNDER CONSTRUCTION';
+                banner.style.left = Math.random() * 80 + '%';
+                banner.style.top = Math.random() * 80 + '%';
+                banner.style.transform = 'rotate(' + (Math.random() * 10 - 5) + 'deg)';
+                decorativeLayer.appendChild(banner);
+            }
+
+            var arrows = ['→', '←', '↑', '↓', '↗', '↘', '↙', '↖'];
+            for (var m = 0; m < 5; m++) {
+                var arrow = document.createElement('div');
+                arrow.className = 'decorative-arrow';
+                arrow.textContent = arrows[Math.floor(Math.random() * arrows.length)];
+                arrow.style.left = Math.random() * 95 + '%';
+                arrow.style.top = Math.random() * 95 + '%';
+                arrow.style.animationDelay = Math.random() * 2 + 's';
+                decorativeLayer.appendChild(arrow);
+            }
+
+            for (var n = 0; n < 3; n++) {
+                var eye = document.createElement('div');
+                eye.className = 'decorative-eye';
+                eye.style.left = Math.random() * 90 + '%';
+                eye.style.top = Math.random() * 90 + '%';
+                eye.style.animationDelay = Math.random() * 2 + 's';
+                decorativeLayer.appendChild(eye);
+            }
+
+            for (var o = 0; o < 3; o++) {
+                var border = document.createElement('div');
+                border.className = 'decorative-border';
+                if (Math.random() > 0.5) border.className += ' dashed';
+                border.style.width = (50 + Math.random() * 100) + 'px';
+                border.style.height = (50 + Math.random() * 100) + 'px';
+                border.style.left = Math.random() * 85 + '%';
+                border.style.top = Math.random() * 85 + '%';
+                border.style.transform = 'rotate(' + (Math.random() * 45) + 'deg)';
+                decorativeLayer.appendChild(border);
+            }
+
+            for (var p = 0; p < 8; p++) {
+                var glitch = document.createElement('div');
+                glitch.className = 'decorative-glitch';
+                glitch.style.left = Math.random() * 100 + '%';
+                glitch.style.top = Math.random() * 100 + '%';
+                glitch.style.transform = 'rotate(' + (Math.random() * 90) + 'deg)';
+                decorativeLayer.appendChild(glitch);
+            }
+        })();
+    </script>
+    <script src="js/ad-popup.js"></script>
+    <div id="ad-popup-container"></div>
+</body>
+</html>
+

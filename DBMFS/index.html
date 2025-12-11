@@ -2,54 +2,90 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-
-    <!-- Responsive layout for mobile/tablet/desktop -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>DI Factory - Do Not Buy Milk</title>
-
-    <!-- Main CSS -->
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/os-desktop.css">
 </head>
 
 <body>
-
-    <!-- ===========================
-         MAIN WRAPPER (Centered)
-         =========================== -->
-    <div class="index-container">
-
-        <!-- DI FACTORY LOGO (pixel-art placeholder) -->
-        <img src="img/ui/di_factory_logo.png" alt="DI Factory Logo" class="logo">
-
-        <!-- WELCOME MESSAGE -->
-        <div class="welcome-box">
-            <h1>Welcome, Investigator.</h1>
-            <p>You have been selected to join DI Factory.</p>
-            <p>Please proceed to access your internal panel.</p>
+    <!-- OS Desktop Environment -->
+    <div class="os-desktop">
+        <!-- Top System Bar -->
+        <div class="os-system-bar">
+            <span class="os-title">DI Factory</span>
         </div>
 
-        <!-- MAIN BUTTONS -->
-        <div class="button-area">
-            <button class="btn enter-btn" onclick="goToHub()">ENTER</button>
-            <button class="btn apply-btn" onclick="goToHub()">APPLY</button>
+        <!-- Desktop Area -->
+        <div class="os-desktop-area">
+            <!-- Background Logo (centered) -->
+            <img src="img/ui/logo.png" alt="DI Factory Logo" class="os-desktop-logo">
+            
+            <!-- Desktop Shortcuts -->
+            <div class="os-shortcuts">
+                <!-- ENTER Shortcut -->
+                <div class="os-shortcut" onclick="window.location.href='home.html'">
+                    <img src="img/ui/enter.gif" alt="Enter" class="os-shortcut-icon">
+                    <span class="os-shortcut-label">ENTER</span>
+                </div>
+
+                <!-- APPLY Shortcut -->
+                <div class="os-shortcut" onclick="goToHub()">
+                    <img src="img/ui/apply.gif" alt="Apply" class="os-shortcut-icon">
+                    <span class="os-shortcut-label">APPLY</span>
+                </div>
+            </div>
+
+            <!-- Blue Cow Window (OS-style floating window) -->
+            <div class="os-window os-window-bluecow">
+                <div class="os-window-header">
+                    <span class="os-window-title">BLUE COW™ — Next Generation Dairy Culture</span>
+                    <button class="os-window-close" onclick="closeBlueCowWindow()">×</button>
+                </div>
+                <div class="os-window-content">
+                    <p>A breakthrough in sustainable milk production.</p>
+                    <ul>
+                        <li>Reduced resource consumption</li>
+                        <li>Enhanced output density</li>
+                        <li>Fully automated breeding cycles</li>
+                        <li>DI Factory certified <em>Gentle Processing™</em></li>
+                    </ul>
+                    <p>Now you can experience the care behind every drop.</p>
+                    <hr class="win-divider">
+                    <img src="img/ui/tmgz.png" alt="Blue Cow" class="bluecow-window-image">
+                    <hr class="win-divider">
+                    <p><strong>Experience our automated Blue Cow lifecycle simulator.</strong></p>
+                    <p><em>Internal Preview Build v0.3</em></p>
+                    <button onclick="window.location.href='pages/bluecow.html'" class="bluecow-button-image">
+                        <img src="img/ui/cow.gif" alt="Feed The Cow">
+                        <span>FEED THE COW</span>
+                    </button>
+                </div>
+            </div>
         </div>
 
-        <!-- HIDDEN BUTTON: DO NOT BUY MILK -->
-        <button class="hidden-dnbm" onclick="goToHub()">DO NOT BUY MILK</button>
-
+        <!-- Bottom Taskbar -->
+        <div class="os-taskbar">
+            <button class="os-start-button" onclick="goToHub()">Start</button>
+            <div class="os-taskbar-fill"></div>
+        </div>
     </div>
 
-
-    <!-- ===========================
-         JAVASCRIPT
-         =========================== -->
+    <!-- JavaScript -->
     <script>
         // Navigate to hub menu
         function goToHub() {
             window.location.href = "pages/hub.html";
         }
-    </script>
 
+        // Close Blue Cow window
+        function closeBlueCowWindow() {
+            var window = document.querySelector('.os-window');
+            if (window) {
+                window.style.display = 'none';
+            }
+        }
+    </script>
+    <script src="js/ad-popup.js"></script>
 </body>
 </html>

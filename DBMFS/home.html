@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DI Factory — Home</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/hub-webcore.css">
+    <link rel="stylesheet" href="css/decorative-layer.css">
+    <link rel="stylesheet" href="css/ad-popup.css">
+</head>
+
+<body data-page="home">
+    <!-- Decorative Collage Layer (Cameron's World style) -->
+    <div id="decorative-layer" class="decorative-layer"></div>
+
+    <!-- Webcore floating decorative elements -->
+    <img src="img/ui/head.gif" alt="" class="webcore-decor webcore-decor-1">
+    <img src="img/organs/brain.png" alt="" class="webcore-decor webcore-decor-2">
+    <img src="img/organs/heart.png" alt="" class="webcore-decor webcore-decor-3">
+
+    <div class="hub-window">
+        <!-- TITLE BAR -->
+        <div class="hub-title">DI Factory — Home</div>
+
+        <!-- MAIN CONTENT -->
+        <div class="home-content">
+            <div class="home-header">
+                <h1>DI FACTORY™</h1>
+                <h2>Do Not Buy Milk For Sale</h2>
+            </div>
+
+            <div class="home-section">
+                <p>Welcome to the future of engineered dairy.</p>
+                <p></p>
+                <p>At DI Factory, milk is no longer a biological byproduct.</p>
+                <p>Milk is precision-compressed, emotionally stabilized,</p>
+                <p>and manufactured through controlled human architecture.</p>
+                <p>The founder, K.Y, developed the first</p>
+                <p>Compression–Extraction Cycle™, creating the foundation</p>
+                <p>of Blue Milk production.</p>
+                <p></p>
+
+            </div>
+
+            <div class="home-section">
+                <h3>Navigation:</h3>
+                <ul class="home-nav">
+                    <li><a href="team.html" class="home-link">• Meet Our Team</a></li>
+                    <li><a href="products.html" class="home-link">• Our Products</a></li>
+                    <li><a href="#" class="home-link">• Careers</a></li>
+
+                </ul>
+            </div>
+
+            <div class="home-section">
+                <h3>Corporate Message:</h3>
+                <p>Milk is engineered.</p>
+                <p>Consistency is mandatory.</p>
+                <p>Deviation is not recommended.</p>
+            </div>
+
+            <div class="home-section home-status">
+                <h3>System Status:</h3>
+                <p>CORE SIGNAL: WEAK</p>
+                <p>MILK PRESSURE: UNSTABLE</p>
+                <p>ORIGIN MATERIAL REQUIRED</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script>
+        // Random background selection for home page
+        (function() {
+            var bgImages = [
+                'img/ui/bg1.gif',
+                'img/ui/bg2.gif',
+                'img/ui/bg3.gif',
+                'img/ui/bg4.gif',
+                'img/ui/bg5.gif'
+            ];
+            var randomIndex = Math.floor(Math.random() * bgImages.length);
+            var selectedBg = bgImages[randomIndex];
+            document.body.style.backgroundImage = 'url(' + selectedBg + ')';
+        })();
+
+        // Generate decorative collage layer (Cameron's World style)
+        (function() {
+            var decorativeLayer = document.getElementById('decorative-layer');
+            if (!decorativeLayer) return;
+
+            var gifSources = [
+                'img/ui/head.gif',
+                'img/organs/brain.png',
+                'img/organs/heart.png',
+                'img/organs/lung.png',
+                'img/organs/stomach.png',
+                'img/organs/uterus.png'
+            ];
+
+            // Create random floating GIFs
+            for (var i = 0; i < 8; i++) {
+                var img = document.createElement('img');
+                var selectedSrc = gifSources[Math.floor(Math.random() * gifSources.length)];
+                img.src = selectedSrc;
+                img.className = 'decorative-element float';
+                img.style.width = ((16 + Math.random() * 32) * 1.5) + 'px';
+                img.style.height = 'auto';
+                img.style.left = Math.random() * 100 + '%';
+                img.style.top = Math.random() * 100 + '%';
+                img.style.animationDelay = Math.random() * 2 + 's';
+                if (selectedSrc.indexOf('head.gif') !== -1) {
+                    img.style.opacity = 0.5 + Math.random() * 0.3;
+                } else {
+                    img.style.opacity = 0.15 + Math.random() * 0.2;
+                }
+                decorativeLayer.appendChild(img);
+            }
+
+            // Add retro text decorations
+            var retroTexts = [
+                'UNDER CONSTRUCTION',
+                'NEW!',
+                'CLICK HERE',
+                '>>>',
+                'WELCOME',
+                'ENTER',
+                'LOADING...',
+                'COMING SOON',
+                'VISITORS: ' + Math.floor(Math.random() * 9999),
+                'LAST UPDATED: 1999'
+            ];
+
+            for (var j = 0; j < 6; j++) {
+                var text = document.createElement('div');
+                text.className = 'decorative-text blink-text';
+                if (Math.random() > 0.5) text.className += ' neon';
+                text.textContent = retroTexts[Math.floor(Math.random() * retroTexts.length)];
+                text.style.left = Math.random() * 90 + '%';
+                text.style.top = Math.random() * 90 + '%';
+                text.style.transform = 'rotate(' + (Math.random() * 20 - 10) + 'deg)';
+                text.style.animationDelay = Math.random() * 2 + 's';
+                decorativeLayer.appendChild(text);
+            }
+
+            // Add warning badges
+            var badges = ['WARNING', 'CAUTION', 'NOTICE', 'ALERT', 'INFO'];
+            for (var k = 0; k < 4; k++) {
+                var badge = document.createElement('div');
+                badge.className = 'decorative-badge';
+                badge.textContent = badges[Math.floor(Math.random() * badges.length)];
+                badge.style.left = Math.random() * 85 + '%';
+                badge.style.top = Math.random() * 85 + '%';
+                badge.style.transform = 'rotate(' + (Math.random() * 30 - 15) + 'deg)';
+                decorativeLayer.appendChild(badge);
+            }
+
+            // Add under construction banners
+            for (var l = 0; l < 2; l++) {
+                var banner = document.createElement('div');
+                banner.className = 'decorative-banner';
+                banner.textContent = 'UNDER CONSTRUCTION';
+                banner.style.left = Math.random() * 80 + '%';
+                banner.style.top = Math.random() * 80 + '%';
+                banner.style.transform = 'rotate(' + (Math.random() * 10 - 5) + 'deg)';
+                decorativeLayer.appendChild(banner);
+            }
+
+            // Add arrows
+            var arrows = ['→', '←', '↑', '↓', '↗', '↘', '↙', '↖'];
+            for (var m = 0; m < 5; m++) {
+                var arrow = document.createElement('div');
+                arrow.className = 'decorative-arrow';
+                arrow.textContent = arrows[Math.floor(Math.random() * arrows.length)];
+                arrow.style.left = Math.random() * 95 + '%';
+                arrow.style.top = Math.random() * 95 + '%';
+                arrow.style.animationDelay = Math.random() * 2 + 's';
+                decorativeLayer.appendChild(arrow);
+            }
+
+            // Add creepy eyes
+            for (var n = 0; n < 3; n++) {
+                var eye = document.createElement('div');
+                eye.className = 'decorative-eye';
+                eye.style.left = Math.random() * 90 + '%';
+                eye.style.top = Math.random() * 90 + '%';
+                eye.style.animationDelay = Math.random() * 2 + 's';
+                decorativeLayer.appendChild(eye);
+            }
+
+            // Add pixel borders
+            for (var o = 0; o < 3; o++) {
+                var border = document.createElement('div');
+                border.className = 'decorative-border';
+                if (Math.random() > 0.5) border.className += ' dashed';
+                border.style.width = (50 + Math.random() * 100) + 'px';
+                border.style.height = (50 + Math.random() * 100) + 'px';
+                border.style.left = Math.random() * 85 + '%';
+                border.style.top = Math.random() * 85 + '%';
+                border.style.transform = 'rotate(' + (Math.random() * 45) + 'deg)';
+                decorativeLayer.appendChild(border);
+            }
+
+            // Add glitch fragments
+            for (var p = 0; p < 8; p++) {
+                var glitch = document.createElement('div');
+                glitch.className = 'decorative-glitch';
+                glitch.style.left = Math.random() * 100 + '%';
+                glitch.style.top = Math.random() * 100 + '%';
+                glitch.style.transform = 'rotate(' + (Math.random() * 90) + 'deg)';
+                decorativeLayer.appendChild(glitch);
+            }
+        })();
+    </script>
+    <script src="js/ad-popup.js"></script>
+    <div id="ad-popup-container"></div>
+</body>
+</html>
